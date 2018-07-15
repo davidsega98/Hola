@@ -11,10 +11,7 @@ public class ClientMain {
        // BackgroundImageJFrame bImage =  new BackgroundImageJFrame();
         Controller controller = new Controller(view);
 
-        WindowController windowController = new WindowController(view,controller);
-        view.registerController(controller);
-        view.registerWindowController(windowController);
-        view.setVisible(true);
+        
         /*
         SwingUtilities.invokeLater(new Runnable() {
             @Override
