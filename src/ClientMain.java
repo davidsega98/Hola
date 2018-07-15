@@ -5,7 +5,7 @@ import view.MainView;
 
 public class ClientMain {
     public static void main(String args[]) {
-        int i = 0; 
+        int i = 0;
         MainView view = new MainView();
 
        // BackgroundImageJFrame bImage =  new BackgroundImageJFrame();
