@@ -5,13 +5,16 @@ import view.MainView;
 
 public class ClientMain {
     public static void main(String args[]) {
-        int i = 0;
+
         MainView view = new MainView();
 
        // BackgroundImageJFrame bImage =  new BackgroundImageJFrame();
         Controller controller = new Controller(view);
 
-        
+        WindowController windowController = new WindowController(view,controller);
+        view.registerController(controller);
+        view.registerWindowController(windowController);
+        view.setVisible(true);
         /*
         SwingUtilities.invokeLater(new Runnable() {
             @Override
